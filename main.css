@@ -1,0 +1,116 @@
+body{
+    background-color: #E8D7F1;
+    
+}
+
+p{
+    text-align: justify;
+}
+
+.name-container{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name{
+    display: flex;
+    text-align: center;
+    color: #4F359B;
+    align-self: center;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.adjective{
+    display: flex;
+    text-align: center;
+    align-self: center;
+    font-size: 18px;
+    font-family: 'Krona One', sans-serif;
+    margin-top: 35px;
+    margin-bottom: 85px;
+}
+
+.social-media-container{
+    display: flex;
+    justify-content: center;
+}
+
+.social-medias ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.social-medias li{
+    list-style-type: none;
+    float: left;
+}
+
+.social-medias a{
+    display: block;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.social-medias i{
+    color: black;
+    font-size: 26px;
+}
+
+.about-skills-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 2px;
+    background-color: thistle;
+    width: 100%;
+    margin-top: 70px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.about-skills-container h3{
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-skills-container p{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.about{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #F1E4F3;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.skills{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    background-color: #F1E4F3;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+
+@keyframes blinkingText{
+	0%{		color: #000;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #000;	}
+}
