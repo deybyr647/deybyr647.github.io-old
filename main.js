@@ -1,4 +1,20 @@
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'assets/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
+let i = 0;
+
+let adjectiveText = () => {
+    
+    let adjectives = ['Web Developer', 'Insomniac', 'Musicophile', 'Stubborn', 'Introverted']
+
+    document.getElementById('blinktext').innerHTML = adjectives[i];
+
+    i++;
+
+    i >= adjectives.length - 1 ? i = 0 : i = i;
+}
+
+window.onload = () => {
+    adjectiveText();
+}
+
+setInterval(() =>{
+    adjectiveText();
+}, 2000)
