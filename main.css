@@ -58,13 +58,9 @@ p{
     padding-bottom: 20px;
 }
 
-.social-medias i:hover{
-    color: #4F359B;
-}
-
 .social-medias i{
     color: black;
-    font-size: 26px;
+    font-size: 36px;
 }
 
 .about-skills-container{
@@ -141,6 +137,14 @@ p{
     margin-left: 40px;
 }
 
+i{
+    transition: all 200ms ease-out;
+}
+
+i:hover{
+    color: #4F359B;
+}
+
 .blinking{
     animation:blinkingText 0.8s infinite;
 }
@@ -176,6 +180,10 @@ p{
         justify-content: center;
         align-items: center;
         flex-flow: row-reverse wrap;
+    }
+
+    .social-medias i{
+        font-size: 26px;
     }
 
     .skills-text{
