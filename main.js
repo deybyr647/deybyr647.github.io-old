@@ -1,3 +1,4 @@
+//Blinking Text
 let i = 0;
 
 let adjectiveText = () => {
@@ -18,3 +19,26 @@ window.onload = () => {
 setInterval(() =>{
     adjectiveText();
 }, 2000)
+
+//Resume Modal
+
+let resume_modal = document.getElementById('resumeModal');
+
+let resume_icon = document.getElementById('resumeIcon');
+
+let modal_image = document.getElementById('resume');
+
+let captionText = document.getElementById('caption');
+
+resume_icon.onclick = () => {
+    resume_modal.style.display = "block";
+    modal_image.src = 'assets/My Resume.pdf';
+    captionText.innerHTML = 'My Resume';
+
+}
+
+let close = document.getElementById('close');
+
+close.onclick = () => {
+    resume_modal.style.display = 'none';
+}
