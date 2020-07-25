@@ -1,6 +1,5 @@
 body{
     background-color: #E8D7F1;
-    
 }
 
 p{
@@ -8,7 +7,7 @@ p{
 }
 
 .name-container{
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
 }
@@ -88,6 +87,7 @@ p{
 
 .about-skills-container p{
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
 }
 
 .about{
@@ -101,6 +101,10 @@ p{
     border-radius: 10px;
 }
 
+.about p{
+    margin: auto;
+}
+
 .skills{
     display: flex;
     flex-flow: column nowrap;
@@ -111,6 +115,30 @@ p{
     background-color: #F1E4F3;
     border: 1px solid transparent;
     border-radius: 10px;
+}
+
+.skills-text{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-flow: row nowrap;
+    font-size: 60px;
+}
+
+.skills-text ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-text li{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.skills-text i{
+    margin-left: 40px;
 }
 
 .blinking{
@@ -129,18 +157,9 @@ p{
     .about-skills-container{
         display: flex;
         flex-flow: column-reverse wrap;
-        justify-content: center;
         align-items: center;
-        
-        padding: 2px;
-        background-color: thistle;
-
         width: 100%;
         margin-top: 70px;
-
-
-        border: 1px solid transparent;
-        border-radius: 10px;
     }
 
     .about{
@@ -157,24 +176,15 @@ p{
         justify-content: center;
         align-items: center;
         flex-flow: row-reverse wrap;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
     }
-    
-    .social-medias li{
-        list-style-type: none;
-        float: left;
+
+    .skills-text{
+        font-size: 40px;
     }
-    
-    .social-medias a{
-        display: block;
-        padding-right: 100px;
-        padding-bottom: 20px;
-    }
-    
-    .social-media-container{
-        margin-left: 90px;
+
+    .skills-text i{
+        font-size: 40px;
+        margin-left: 20px;
     }
     
 }
