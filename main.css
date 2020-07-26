@@ -44,7 +44,7 @@ p{
     height: 100%;
 }
 
-#caption{
+#resumeCaption{
     margin: auto;
     display: block;
     width: 80%;
@@ -53,6 +53,7 @@ p{
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .modal{

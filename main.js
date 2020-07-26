@@ -28,11 +28,11 @@ let resume_icon = document.getElementById('resumeIcon');
 
 let modal_image = document.getElementById('resume');
 
-let captionText = document.getElementById('caption');
+let captionText = document.getElementById('resumeCaption');
 
 resume_icon.onclick = () => {
     resume_modal.style.display = "block";
-    modal_image.src = 'assets/My Resume.pdf';
+    modal_image.src = 'assets/Resume.pdf';
     captionText.innerHTML = 'My Resume';
 
 }
