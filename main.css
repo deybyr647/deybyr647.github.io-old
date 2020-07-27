@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #E8D7F1;
     margin: 10px;
@@ -5,7 +9,31 @@ body{
 
 p{
     text-align: justify;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    margin: auto;
+    padding: 20px;
 }
+
+#toTop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #4F359B;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 18px;
+}
+
+#toTop:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 
 .name-container{
     margin-top: 5%;
@@ -36,7 +64,7 @@ p{
     color: #9042f5;
 }
 
-#resumeIcon{
+#resume-icon{
     cursor: pointer;
     transition: 0.3s;
 }
@@ -151,17 +179,13 @@ p{
     margin-top: 50px;
     border: 1px solid transparent;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-skills-container h3{
     font-family: 'Raleway', sans-serif;
     font-size: 28px;
     color: #a89aed;
-}
-
-.about-skills-container p{
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
 }
 
 .about{
@@ -173,10 +197,6 @@ p{
     background-color: #F1E4F3;
     border: 1px solid transparent;
     border-radius: 10px;
-}
-
-.about p{
-    margin: auto;
 }
 
 .skills{
@@ -214,8 +234,8 @@ p{
     margin-left: 40px;
 }
 
-.portfolio-container{
-    display: flex;
+#portfolio-container{
+    display: none;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
@@ -225,6 +245,7 @@ p{
     margin-top: 50px;
     border: 1px solid transparent;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .portfolio{
@@ -253,6 +274,7 @@ p{
     border-radius: 10px;
     background-color: white;
     margin: 20px;
+    
 }
 
 .project img{
@@ -261,12 +283,7 @@ p{
     margin: 10px;
     border: 2px solid transparent;
     border-radius: 10px;
-}
-
-.project p{
-    margin: auto;
-    padding: 20px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-title{
@@ -288,7 +305,7 @@ p{
     margin: 10px;
     text-decoration: none;
     text-align: center;
-    transition: all 200ms ease-out;
+    transition: all 300ms ease-out;
 }
 
 .project-title a:hover{
@@ -296,7 +313,7 @@ p{
 }
 
 i{
-    transition: all 200ms ease-out;
+    transition: all 300ms ease-out;
 }
 
 i:hover{
@@ -347,8 +364,13 @@ i:hover{
         color: #4F359B;
     }
 
+    .project{
+        display: block;
+    }
+
     .project img{
-        height: initial;
+        margin: inherit;
+        width: 80%;
     }
 
     .project-title a:hover{
