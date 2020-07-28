@@ -2,7 +2,7 @@
 let t = 0;
 let adjectiveText = () => {
     
-    let adjectives = ['Web Developer', 'Insomniac', 'Musicophile', 'Stubborn', 'Introverted']
+    let adjectives = ['Web Developer', 'Insomniac', 'Musicophile', 'Introverted', 'Business/Finance Enthusiast']
 
     document.getElementById('blinktext').innerHTML = adjectives[t];
 
