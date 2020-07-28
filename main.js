@@ -2,13 +2,13 @@
 let t = 0;
 let adjectiveText = () => {
     
-    let adjectives = ['Web Developer', 'Insomniac', 'Introvert', 'Business/Finance Enthusiast']
+    let adjectives = ['Web Developer', 'Introverted', 'Dedicated', 'Assertive', 'Business/Finance Enthusiast']
 
     document.getElementById('blinktext').innerHTML = adjectives[t];
 
     t++;
 
-    t >= adjectives.length - 1 ? t = 0 : t = t;
+    t > adjectives.length - 1 ? t = 0 : t = t;
 }
 
 window.onload = () => {
