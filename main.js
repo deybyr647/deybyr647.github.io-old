@@ -43,7 +43,7 @@ let portfolioContainer = document.getElementById('portfolio-container');
 let isShowing = false;
 
 portfolioIcon.onclick = () => {
-    isShowing = !isShowing;
+    isShowing = true;
     isShowing == true ? portfolioContainer.style.display = 'flex' : portfolioContainer.style.display = 'none';
 }
 
@@ -59,7 +59,7 @@ window.onscroll = () => {
 }
 
 back2Top.onclick = () => {
-    isShowing = !isShowing;
+    isShowing = false;
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 
