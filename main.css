@@ -57,9 +57,9 @@ body::-webkit-scrollbar-button {display:none}
 }
 
 .name-container{
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
+    margin-top: 3%;
 }
 
 .name{
@@ -177,7 +177,11 @@ body::-webkit-scrollbar-button {display:none}
 .social-media-container{
     display: flex;
     justify-content: center;
-    margin-left: 90px;
+    margin-left: 100px;
+}
+
+.social-medias{
+    display: flex;
 }
 
 .social-medias ul{
@@ -359,6 +363,10 @@ i:hover{
         width: 100%;
     }
 
+    .social-medias{
+        display: block;
+    }
+
     .social-medias ul{
         display: flex;
         justify-content: center;
@@ -425,6 +433,10 @@ i:hover{
         width: 80%;
     }
     
+    .social-medias{
+        display: block;
+    }
+
     .social-media-container{
         margin-left: 65px;
         margin-right: -35px;
