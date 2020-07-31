@@ -48,9 +48,13 @@ body::-webkit-scrollbar-button {display:none}
     font-size: 18px;
 }
 
+#toTop i{
+    color: white;
+}
+
 #toTop:hover {
     background-color: #555; /* Add a dark-grey background on hover */
-  }
+}
 
 .name-container{
     margin-top: 5%;
@@ -79,6 +83,18 @@ body::-webkit-scrollbar-button {display:none}
 
 .adjective span{
     color: #9042f5;
+}
+
+.blinking{
+    animation:blinkingText 0.9s infinite;
+}
+
+@keyframes blinkingText{
+	0%{		color: #9042f5;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #9042f5;	}
 }
 
 #resume-icon{
@@ -335,18 +351,6 @@ i{
 
 i:hover{
     color: #4F359B;
-}
-
-.blinking{
-    animation:blinkingText 0.8s infinite;
-}
-
-@keyframes blinkingText{
-	0%{		color: #9042f5;	}
-	49%{	color: transparent;	}
-	50%{	color: transparent;	}
-	99%{	color:transparent;	}
-	100%{	color: #9042f5;	}
 }
 
 @media(max-width: 1000px){
