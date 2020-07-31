@@ -355,10 +355,8 @@ i:hover{
 
 @media(max-width: 1000px){
     .about-skills-container{
-        display: flex;
         flex-flow: column-reverse wrap;
         width: 100%;
-        margin-top: 70px;
     }
 
     .social-medias ul{
@@ -398,4 +396,42 @@ i:hover{
         color: #4F359B;
     }
     
+}
+
+@media(max-width: 365px){
+
+    .skills, .about{
+        width: 82.7%;
+    }
+    
+    .social-media-container{
+        margin-left: 65px;
+        margin-right: -35px;
+    }
+
+    .social-medias li {
+        padding-right: 100px;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 320px){
+    body{
+        margin-left: 10px;
+        margin-right: -10px;
+    }
+
+    .skills, .about{
+        width: 80%;
+    }
+    
+    .social-media-container{
+        margin-left: 65px;
+        margin-right: -35px;
+    }
+
+    .social-medias li {
+        padding-right: 100px;
+        padding-bottom: 20px;
+    }
 }
