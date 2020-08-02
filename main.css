@@ -53,7 +53,7 @@ body::-webkit-scrollbar-button {display:none}
 }
 
 #toTop:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #555;
 }
 
 .name-container{
@@ -311,7 +311,7 @@ body::-webkit-scrollbar-button {display:none}
     border-radius: 10px;
     background-color: white;
     margin: 20px;
-    
+
 }
 
 .project img{
@@ -403,7 +403,7 @@ i:hover{
     .project-title a:hover{
         color: #4F359B;
     }
-    
+
 }
 
 @media(max-width: 365px){
@@ -411,7 +411,7 @@ i:hover{
     .skills, .about{
         width: 82.7%;
     }
-    
+
     .social-media-container{
         margin-left: 65px;
         margin-right: -35px;
@@ -432,7 +432,7 @@ i:hover{
     .skills, .about{
         width: 80%;
     }
-    
+
     .social-medias{
         display: block;
     }
