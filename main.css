@@ -96,7 +96,7 @@ body::-webkit-scrollbar-button {
 }
 
 .adjective span {
-    color: #9042f5;
+    color: #4E148C;
 }
 
 .blinking {
@@ -105,7 +105,7 @@ body::-webkit-scrollbar-button {
 
 @keyframes blinkingText {
     0% {
-        color: #9042f5;
+        color: #4E148C;
     }
 
     49% {
@@ -121,7 +121,7 @@ body::-webkit-scrollbar-button {
     }
 
     100% {
-        color: #9042f5;
+        color: #4E148C;
     }
 }
 

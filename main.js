@@ -67,43 +67,46 @@ back2Top.onclick = () => {
     }, 500)
 }
 
-
 //Dark Mode Toggle
 let darkModeToggle = document.querySelector('#darkModeToggle');
 let modeIcon = document.querySelector('#modeIcon');
 let isEnabled = false;
 
-let bodyColor = document.querySelector('body').style.backgroundColor;
-let aboutSkillsContainerColor = document.querySelector('.about-skills-container').style.backgroundColor;
-let portfolioContainerColor = document.querySelector('#portfolio-container').style.backgroundColor;
-let nameColor = document.querySelector('.name').style.backgroundColor;
-
-bodyColor = '#E8D7F1';
-aboutSkillsContainerColor = 'thistle';
-portfolioContainerColor = 'thistle';
-nameColor = '#4F359B';
-
 let toggleMode = () => {
+    let body = document.querySelector('body');
+    let aboutSkillsContainer = document.querySelector('.about-skills-container');
+    let portfolioContainer = document.querySelector('#portfolio-container');
+    let skills = document.querySelector('.skills');
+    let about = document.querySelector('.about');
+    let portfolio = document.querySelector('.portfolio');
+    let name = document.querySelector('.name');
+    let project = document.querySelectorAll('.project');
 
     if(isEnabled == true){
         modeIcon.className = 'fas fa-moon'
-        bodyColor = '#7F5A83';
-        aboutSkillsContainerColor = '#2C0735';
-        portfolioContainerColor = '#2C0735';
-        nameColor = '#000000';
+        body.style.backgroundColor = '#7F5A83';
+        aboutSkillsContainer.style.backgroundColor = '#2C0735';
+        portfolioContainer.style.backgroundColor = '#2C0735';
+        about.style.backgroundColor = '#8d808f';
+        skills.style.backgroundColor = '#8d808f';
+        portfolio.style.backgroundColor = '#8d808f';
+        project.forEach(p => p.style.backgroundColor = '#cdcdcd');
+        name.style.color = '#A188A6';
+
     } else{
         modeIcon.className = 'fas fa-sun';
-        bodyColor = '#E8D7F1';
-        aboutSkillsContainerColor = 'thistle';
-        portfolioContainerColor = 'thistle';
-        nameColor = '#4F359B';
+        body.style.backgroundColor = '#E8D7F1';
+        aboutSkillsContainer.style.backgroundColor = 'thistle';
+        portfolioContainer.style.backgroundColor = 'thistle';
+        about.style.backgroundColor = '#F1E4F3';
+        skills.style.backgroundColor = '#F1E4F3';
+        portfolio.style.backgroundColor = '#F1E4F3';
+        project.forEach(p => p.style.backgroundColor = 'white');
+        name.style.color = '#4F359B';
     }
 }
 
 darkModeToggle.onclick = () => {
     isEnabled = !isEnabled;
-
-    document.querySelector('body').style.backgroundColor = 'black';
-
-    console.log(isEnabled);
+    toggleMode();
 }
