@@ -110,5 +110,3 @@ darkModeToggle.onclick = () => {
     isEnabled = !isEnabled;
     toggleMode();
 }
-
-let f = 'test';
