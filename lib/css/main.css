@@ -262,6 +262,8 @@ body::-webkit-scrollbar-button {
     background-color: #F1E4F3;
     border-radius: 10px;
     width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
 }
 
 .skills-text {
